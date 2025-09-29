@@ -1,0 +1,34 @@
+site_name: Seungmin Seo 
+site_description: Personal site and blog on AI metrics, evaluation, and testing
+site_author: Seungmin Seo
+site_url: https://seungmin-seo.github.io/
+
+nav:
+  - Home: 'index.md'
+  - Blog:
+    - Index: 'posts/index.md'
+    - Metric Spotlights: 'posts/metric-spotlights.md'
+    - Tech-knowledge: 'posts/tech-knowledge.md'
+
+theme:
+  name: terminal
+  palette: pink
+  features:
+    - navigation.side.indexes
+
+markdown_extensions:
+  - def_list
+  - attr_list
+  - md_in_html
+  - footnotes
+  - pymdownx.blocks.details:
+      types:
+        - name: info 
+          class: terminal-alert
+          title: Info
+        - name: warning
+          class: 'terminal-alert terminal-alert-error'
+          title: Warning
+        - name: important
+          class: 'terminal-alert terminal-alert-primary'
+          title: Important
